@@ -1,3 +1,4 @@
+import { View } from "react-native";
 import { Pressable } from "react-native";
 import { Text } from "react-native";
 import React from "react";
@@ -12,9 +13,7 @@ const Untitled2 = ({
       padding: 10,
       position: 'relative',
       flex: 1
-    }}><Pressable onPress={() => navigation.navigation.navigate("Untitled1", {
-        "id": "hello"
-      })}><Text style={styles.BpQmokSg}>Lorem ipsum…</Text></Pressable></ScrollView>
+    }}><Pressable onPress={() => navigation.navigation.navigate("Untitled1", {})}><Text style={styles.BpQmokSg}>Lorem ipsum…</Text></Pressable><View style={styles.jniwCRDt}></View><Text style={styles.bxMjoAGT}>Lorem ipsum…</Text></ScrollView>
     </SafeAreaView>;
 };
 
@@ -25,6 +24,20 @@ const styles = StyleSheet.create({
   BpQmokSg: {
     width: 203,
     height: 152,
+    lineHeight: 14,
+    fontSize: 14,
+    borderRadius: 0
+  },
+  jniwCRDt: {
+    height: 60,
+    width: 140,
+    backgroundColor: "#E4E4E4",
+    borderRadius: 0,
+    color: "#777777"
+  },
+  bxMjoAGT: {
+    width: 100,
+    height: 50,
     lineHeight: 14,
     fontSize: 14,
     borderRadius: 0
