@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, View, FlatList, StyleSheet, Text, StatusBar, Image } from 'react-native';
+import { SafeAreaView, View, FlatList, StyleSheet, Text, StatusBar } from 'react-native';
 const DATA = [{
   id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
   title: 'John Doe',
@@ -17,30 +17,12 @@ const DATA = [{
   message: 'Duis eget augue ornare, dignissim quam, consequat tellus.'
 }];
 
-const ItemComponent = ({
-  item,
-  id,
-  separator
-}) => {
-  return <View style={styles.item}>
-      <Image style={styles.avatar} source={{
-      uri: item.image
-    }} />
-      <View style={styles.messageContainer}>
-        <Text style={styles.title}>{item.title}</Text>
-        <Text style={styles.message}>{item.message}</Text>
-      </View>
-    </View>;
-};
-
 const App = () => {
   return <SafeAreaView style={styles.container}>
+    <Text>Test</Text>
       <FlatList data={DATA} renderItem={({
       item
     }) => <View style={styles.item}>
-            <Image style={styles.avatar} source={{
-        uri: item.image
-      }} />
             <View style={styles.messageContainer}>
               <Text style={styles.title}>{item.title}</Text>
               <Text style={styles.message}>{item.message}</Text>
