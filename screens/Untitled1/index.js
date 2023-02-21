@@ -24,8 +24,8 @@ const App = () => {
       item
     }) => <View style={styles.item}>
             <View style={styles.messageContainer}>
-              <Text style={styles.title}>{item.title}</Text>
-              <Text style={styles.message}>{item.message}</Text>
+              <Text style={styles.title}>User Name</Text>
+              <Text style={styles.message}>User Message</Text>
             </View>
           </View>} keyExtractor={item => item.id} />
     </SafeAreaView>;
