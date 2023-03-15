@@ -24,8 +24,8 @@ const styles = StyleSheet.create({
   BpQmokSg: {
     width: 203,
     height: 152,
-    lineHeight: 14,
-    fontSize: 14,
+    lineHeight: 15,
+    fontSize: 15,
     borderRadius: 0
   },
   jniwCRDt: {
