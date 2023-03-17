@@ -4,7 +4,9 @@ import { SafeAreaView, View, FlatList, StyleSheet, Text, StatusBar } from 'react
 const globalVariable = "I am a global variable (in this screen file).";
 
 const App = () => {
-  const Users = useSelector(state => state.Users);
+  const {
+    entities: Users
+  } = useSelector(state => state.Users);
   return <SafeAreaView style={styles.container}>
     <Text>There are {Users.length} users.</Text>
       <FlatList data={Users} renderItem={({
